@@ -11,7 +11,10 @@ The idea is to store lyrics saved in txt file inside the mp3 unsychronised lyric
 -Synchronised lyrics/text
 >-Unsychronised lyrics/text transcription  
 
->(For more visit: <http://id3.org/id3v2.3.0#Unsychronised_lyrics.2Ftext_transcription>)
+>(For more visit [this page](http://id3.org/id3v2.3.0#Unsychronised_lyrics.2Ftext_transcription) )
+
+
+
 
 ##Background Story
 
@@ -19,7 +22,7 @@ There are many versions of ID tags (ID3v1,ID3v2,ID4...).
 
 	TODO:check older mp3 file if they contain lyrics-tag
 	
-ID3 Writer-CLI <https://www.npmjs.com/package/id3-writer-cli> is what would do the job
+ID3 Writer CLI [this page](https://www.npmjs.com/package/id3-writer-cli) is what would do the job
 however it looks like it is not developed yet. Only thing which worked was --help option. 
 After trying to get a version:
 
