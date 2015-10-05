@@ -45,14 +45,15 @@ For reading MP3 tags:
 For writing lyrics to MP3:
 
 	$ cat lyrics.txt | node build.js
+	
 	- if the answer = null undefined; lyrics were saved into the file
 	- now your can run tagReader.js to check it out
 
 >For some reason I can see only part of lyrics on my phone device. 
 >I know that they are written there but they are not shown entirely. 
 >
->TODO: check why is this happening!
-> 
+>TODO: check why is this happening
+>TODO: better file structure 
 
 
 
