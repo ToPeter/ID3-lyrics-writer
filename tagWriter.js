@@ -22,6 +22,10 @@ rl.on('line', function(line){
     album: 'Hydra',
     track_number: '6/10',
     unsychronized_lyric_text_transcription: lyrics
+    
+      /*Fot synchronized lyrics
+      unsychronized_lyric_text_transcription:'',
+      synchronized_lyric_text: lyrics*/
   }
 }
  

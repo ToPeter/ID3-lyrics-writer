@@ -20,7 +20,10 @@ The idea is to store lyrics saved in txt file inside the mp3 unsychronised lyric
 
 There are many versions of ID tags (ID3v1,ID3v2,ID3v2.4.0...).
 
-	TODO: check if is lyrics-tag supported in all version 
+	IMPORTANT: Your music player must support all versions of ID3 tags. This program works with v2.4
+	so if you use music player which reads only ID3 tags v2.3 then the lyrics will not be shown
+
+	TODO: make it works for all ID3 tag versions
 	
 ``ID3 Writer CLI`` ([npmjs](https://www.npmjs.com/package/id3-writer-cli)) is what would do the job
 however it looks like it is not developed yet. Only thing which worked was **--help** option. 
@@ -36,7 +39,12 @@ received :
 	No assignment - TypeError: Cannot read property '2' of null
 	Not implemented yet.
 
-##How to run project
+##How to run project (Unsychronised lyrics/text transcription)
+
+You need to install: 
+
+	$ npm install id3_reader
+	$ npm install readlines
 
 For reading MP3 tags:
 
@@ -46,14 +54,18 @@ For writing lyrics to MP3:
 
 	$ cat lyrics.txt | node build.js
 	
-	- if the answer = null undefined; lyrics were saved into the file
-	- now your can run tagReader.js to check it out
+	- if the answer is null undefined; lyrics were saved into the file
+	- now your can run tagReader.js to check the result
 
 >For some reason I can see only part of lyrics on my phone device. 
 >I know that they are written there but they are not shown entirely. 
->
->TODO: check why is this happening
->TODO: better file structure 
+
+	TODO: check why is this happening
+	TODO: better file structure of node
+
+**Synchronised lyrics/text** should be even easier to do. You need lyrics in 
+file format .lrc, to set unsychronised lyrics tag to empty value and set synchronised lyrics
+tag value to be equal with your .lrc file. After these steps all should work. 
 
 
 
